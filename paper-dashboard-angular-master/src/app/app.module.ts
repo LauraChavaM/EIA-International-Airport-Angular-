@@ -13,24 +13,36 @@ import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
+import { ServicesComponent } from './pages/services/services.component';
+import { PersonnelComponent } from './pages/personnel/personnel.component';
+
+import { BrowserModule } from '@angular/platform-browser';
+//import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module'; 
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+   // FlightsComponent,
+    ServicesComponent,
+    PersonnelComponent
   ],
   imports: [
-    BrowserAnimationsModule,
-    RouterModule.forRoot(AppRoutes,{
-      useHash: true
-    }),
-    SidebarModule,
-    NavbarModule,
-    ToastrModule.forRoot(),
-    FooterModule,
-    FixedPluginModule
+    RouterModule,
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
