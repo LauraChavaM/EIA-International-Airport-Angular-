@@ -1,3 +1,61 @@
+# Airport Management System - Frontend
+
+This project is the frontend for the **Airport Management System**, built using Angular and based on the Paper Dashboard Angular template. It provides a user-friendly interface for managing flights, passengers, baggage, and airport services.
+
+---
+
+## Features
+
+- **Flight Management**: View, add, and manage flight schedules and details.
+- **Passenger Management**: Track passenger records, preferences, and history.
+- **Baggage Management**: Monitor baggage registration, tracking, and claims.
+- **Airport Services**: Manage shops, lounges, and internal transportation.
+- **Authentication**: Secure login and route protection using Angular guards.
+
+---
+
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+
+---
+
+## Quick Start
+
+### Prerequisites
+- Install [Node.js](https://nodejs.org/en) (LTS version recommended).
+- Install Angular CLI globally:
+  ```sh
+  npm install -g @angular/cli
+
+### Installation
+- Install dependencies:
+  npm install
+- Run the development server:
+  ng serve 
+- Open your browser and navigate to http://localhost:4200/.
+
+
+## Project Structure
+src/
+├── app/
+│   ├── layouts/          # Layout components (sidebar, navbar...)
+│   ├── pages/            # Feature-specific pages (flights, passengers...)
+│   ├── services/         # Angular services for API calls
+│   ├── guards/           # Route guards for authentication
+│   └── shared/           # Shared components (footer, fixed plugin...)
+├── assets/               # Static assets (CSS, images, fonts)
+├── environments/         # Environment-specific configurations
+└── main.ts   
+
+
+## Technologies Used
+Frontend: Angular, TypeScript
+Styling: Bootstrap, SCSS
+Authentication: JWT-based authentication -<vscode_annotation details='%5B%7B%22title%22%3A%22hardcoded-credentials%22%2C%22description%22%3A%22Embedding%20credentials%20in%20source%20code%20risks%20unauthorized%20access%22%7D%5D'> </vscode_annotation>API Integration: Angular HttpClient
+
 <!-- # [Paper Dashboard Angular](https://www.creative-tim.com/product/paper-dashboard-angular)
 ![version](https://img.shields.io/badge/version-2.4.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/paper-dashboard-angular.svg?maxAge=2592000)]() [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/paper-dashboard-angular.svg?maxAge=2592000)]()  [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
