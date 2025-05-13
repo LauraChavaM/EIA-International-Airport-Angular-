@@ -5,7 +5,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { PersonnelComponent } from './pages/personnel/personnel.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'flights', pathMatch: 'full' },  // Cuando cargues localhost:4200, redirige a /flights
+  { path: '', redirectTo: 'flights', pathMatch: 'full' },  // Cuando cargues localhost:4200, redirige a /flights (que aun no existe hehehe)
   //{ path: 'flights', component: FlightsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'personnel', component: PersonnelComponent }
@@ -16,3 +16,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+//antes de correrlo, entrar a la carpeta larga fea esa.
